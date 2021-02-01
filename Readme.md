@@ -5,10 +5,10 @@ docker run --name=mysql5 -e MYSQL_ROOT_PASSWORD=password -d -p 3306:3306 -v /Use
 Here -v /Users/arpan/GitRepo/Spring-boot/spring-boot-mysql-rest-api-tutorial/mysqlSpace_5_6:/var/lib/mysql
 will create the mysql space on local disk so we will not loose any mysql table data
 
-#Check mysql instance 
+# Check mysql instance 
 docker exec -it mysql5 mysql -uroot -ppassword  
 
-#create the required database for the application:-
+# create the required database for the application:-
 create database notes_app;
 
 ==========================================================
